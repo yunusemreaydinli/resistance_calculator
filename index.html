@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container text-center">
+      <div class="row justify-content-center mt-5">
+        <div class="col"></div>
+        <div class="col-10">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title">Direnç Hesaplama</h3>
+              <br />
+              <div class="card-text">
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="direnc"
+                        id="4-band"
+                        value="4"
+                        checked
+                      />
+                      <label class="form-check-label" for="4-band"
+                        >4 Bantlı Direnç</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="direnc"
+                        id="5-band"
+                        value="5"
+                      />
+                      <label class="form-check-label" for="5-band"
+                        >5 Bantlı Direnç</label
+                      >
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="direnc"
+                        id="6-band"
+                        value="6"
+                      />
+                      <label class="form-check-label" for="6-band"
+                        >6 Bantlı Direnç
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col" id="band-1">
+                    <div class="mb-3">
+                      <label for="" class="form-label">1. Band</label>
+                      <select class="form-control" name="" id="">
+                        <option value="1">1 Kahverengi</option>
+                        <option value="2">2 Kırmızı</option>
+                        <option value="3">3 Turuncu</option>
+                        <option value="4">4 Sarı</option>
+                        <option value="5">5 Yeşil</option>
+                        <option value="6">6 Mavi</option>
+                        <option value="7">7 Mor</option>
+                        <option value="8">8 Gri</option>
+                        <option value="9">9 Beyaz</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col" id="band-2">
+                    <div class="mb-3">
+                      <label for="" class="form-label">2. Band</label>
+                      <select class="form-control" name="" id="">
+                        <option value="0">0 Siyah</option>
+                        <option value="1">1 Kahverengi</option>
+                        <option value="2">2 Kırmızı</option>
+                        <option value="3">3 Turuncu</option>
+                        <option value="4">4 Sarı</option>
+                        <option value="5">5 Yeşil</option>
+                        <option value="6">6 Mavi</option>
+                        <option value="7">7 Mor</option>
+                        <option value="8">8 Gri</option>
+                        <option value="9">9 Beyaz</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col" id="band-3">
+                    <div class="mb-3">
+                      <label for="" class="form-label">3. Band</label>
+                      <select class="form-control" name="" id="">
+                        <option value="0">Siyah</option>
+                        <option value="1">1 Kahverengi</option>
+                        <option value="2">2 Kırmızı</option>
+                        <option value="3">3 Turuncu</option>
+                        <option value="4">4 Sarı</option>
+                        <option value="5">5 Yeşil</option>
+                        <option value="6">6 Mavi</option>
+                        <option value="7">7 Mor</option>
+                        <option value="8">8 Gri</option>
+                        <option value="9">9 Beyaz</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col" id="band-factor">
+                    <div class="mb-3">
+                      <label for="" class="form-label">Çarpan</label>
+                      <select class="form-control" name="" id="">
+                        <option value="1">× 1 Siyah</option>
+                        <option value="10">× 10 Kahverengi</option>
+                        <option value="100">× 100 Kırmızı</option>
+                        <option value="1000">× 1k Turuncu</option>
+                        <option value="10000">× 10k Sarı</option>
+                        <option value="100000">× 100k Yeşil</option>
+                        <option value="1000000">× 1M Mavi</option>
+                        <option value="10000000">× 10M Mor</option>
+                        <option value="100000000">× 100M Gri</option>
+                        <option value="1000000000">× 1G Beyaz</option>
+                        <option value="/10">÷ 10 Altın</option>
+                        <option value="/100">÷ 100 Gümüş</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col" id="band-tolerance">
+                    <div class="mb-3">
+                      <label for="" class="form-label">tolerance</label>
+                      <select class="form-control" name="" id="">
+                        <option value="± %1">± %1 Kahverengi</option>
+                        <option value="± %2">± %2 Kırmızı</option>
+                        <option value="± %3">± %3 Turuncu</option>
+                        <option value="± %4">± %4 Sarı</option>
+                        <option value="± %0.5">± %0.5 Yeşil</option>
+                        <option value="± %0.25">± %0.25 Mavi</option>
+                        <option value="± %0.10">± %0.10 Mor</option>
+                        <option value="± %0.05">± %0.05 Gri</option>
+                        <option value="± %5">± %5 Altın</option>
+                        <option value="± %10">± %10 Gümüş</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col" id="band-heat">
+                    <div class="mb-3">
+                      <label for="" class="form-label"
+                        >Sıcaklık Katsayısı</label
+                      >
+                      <select class="form-control" name="" id="">
+                        <option>100 Kahverengi</option>
+                        <option>50 Kırmızı</option>
+                        <option>15 Turuncu</option>
+                        <option>25 Sarı</option>
+                        <option>10 Mavi</option>
+                        <option>5 Mor</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br />
+              <h3 class="card-title" id="result">Sonuç</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        function calculate() {
+          var band1 = $("#band-1").find("select").val();
+          var band2 = $("#band-2").find("select").val();
+          var band3 = $("#band-3").find("select").val();
+          var bandfactor = $("#band-factor").find("select").val();
+          var bandtolerance = $("#band-tolerance").find("select").val();
+          var bandheat = $("#band-heat").find("select").val();
+          var result = 0;
+          var radio = $("input[type='radio']:checked").val();
+
+          if (radio == "4") {
+            var bands = band1 + band2;
+            result = parseInt(bands) * parseInt(bandfactor);
+            console.log(parseInt(bandfactor));
+          } else if (radio == "5") {
+          } else if (radio == "6") {
+          }
+
+          $("#result").html(result);
+        }
+        $("#band-3").hide();
+        $("#band-heat").hide();
+        $("select").change(function (e) {
+          calculate();
+        });
+        $("input[type=radio]").change(function (e) {
+          calculate();
+          var value = this.value;
+          if (value == "4") {
+            $("#band-3").hide();
+            $("#band-heat").hide();
+          } else if (value == "5") {
+            $("#band-3").show();
+            $("#band-heat").hide();
+          } else if (value == "6") {
+            $("#band-3").show();
+            $("#band-heat").show();
+          }
+          console.log(this.value);
+        });
+      });
+    </script>
+  </body>
+</html>
