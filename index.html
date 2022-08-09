@@ -101,7 +101,7 @@
                     <div class="mb-3">
                       <label for="" class="form-label">3. Band</label>
                       <select class="form-control" name="" id="">
-                        <option value="0">Siyah</option>
+                        <option value="0">0 Siyah</option>
                         <option value="1">1 Kahverengi</option>
                         <option value="2">2 Kırmızı</option>
                         <option value="3">3 Turuncu</option>
@@ -135,7 +135,7 @@
                   </div>
                   <div class="col" id="band-tolerance">
                     <div class="mb-3">
-                      <label for="" class="form-label">tolerance</label>
+                      <label for="" class="form-label">Tolerans</label>
                       <select class="form-control" name="" id="">
                         <option value="± %1">± %1 Kahverengi</option>
                         <option value="± %2">± %2 Kırmızı</option>
@@ -156,12 +156,12 @@
                         >Sıcaklık Katsayısı</label
                       >
                       <select class="form-control" name="" id="">
-                        <option>100 Kahverengi</option>
-                        <option>50 Kırmızı</option>
-                        <option>15 Turuncu</option>
-                        <option>25 Sarı</option>
-                        <option>10 Mavi</option>
-                        <option>5 Mor</option>
+                        <option value="100">100 Kahverengi</option>
+                        <option value="50">50 Kırmızı</option>
+                        <option value="15">15 Turuncu</option>
+                        <option value="25">25 Sarı</option>
+                        <option value="10">10 Mavi</option>
+                        <option value="5">5 Mor</option>
                       </select>
                     </div>
                   </div>
@@ -202,10 +202,16 @@
             result = parseInt(bands) * parseInt(bandfactor);
             console.log(parseInt(bandfactor));
           } else if (radio == "5") {
+            var bands = band1 + band2 + band3;
+            result = parseInt(bands) * parseInt(bandfactor);
+            console.log(parseInt(bandfactor));
           } else if (radio == "6") {
+            var bands = band1 + band2 + band3;
+            result = parseInt(bands) * parseInt(bandfactor);
+            console.log(parseInt(bandfactor));
           }
 
-          $("#result").html(result);
+          $("#result").html(result + "" + bandtolerance);
         }
         $("#band-3").hide();
         $("#band-heat").hide();
